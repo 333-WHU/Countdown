@@ -93,7 +93,7 @@ class CountdownIndex(QWidget):
     
     def init_window(self):
         '''初始化窗口'''
-        self.setWindowIcon(QIcon(".\\sourse\\首页图标.jpg!con"))# 设置窗口图标
+        self.setWindowIcon(QIcon(".\\sourse\\首页图标.jpg"))# 设置窗口图标
         self.setWindowTitle("专注时间")# 设置窗口标题
         self.setGeometry(400, 200, 600, 400)# 设置窗口大小
 
