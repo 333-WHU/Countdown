@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QApplication
-from Countdown_index import CountdownIndex
-from Countdown_main import Countdown
-from Final_Dialog import Final_Dialog
+from Interface.Countdown_index import CountdownIndex
+from Interface.Countdown_main import Countdown
+from Interface.Final_Dialog import Final_Dialog
 
 
 class MainFramework():

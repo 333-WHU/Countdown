@@ -2,8 +2,9 @@ from PySide6.QtWidgets import QLabel, QVBoxLayout, QWidget, QPushButton, QSpinBo
 from PySide6.QtCore import QTimer, QTime, Qt,QDate
 from PySide6.QtGui import QIcon, QFont
 
-from Show_Box import WelcomeLabel,NumLabel,HourLabel
-from Button_Box import UpButton,DownButton,ConfirmButton
+from Widgets.Show_Box import WelcomeLabel,NumLabel,HourLabel
+from Widgets.Button_Box import UpButton,DownButton,ConfirmButton
+from Interfaccia.BaseWindow import BaseWidget
 
 class UpWidget(QWidget):
     """上方的部件，用来显示欢迎语"""
@@ -82,18 +83,13 @@ class DownWidget(QWidget):
 
         
 
-class CountdownIndex(QWidget):
+class CountdownIndex(BaseWidget):
     def __init__(self):
         super().__init__()
-        self.init_window()
-        self.init_widget()
-        self.init_layer()
-        self.init_connect()
-
     
     def init_window(self):
         '''初始化窗口'''
-        self.setWindowIcon(QIcon(".\\sourse\\首页图标.jpg"))# 设置窗口图标
+        self.setWindowIcon(QIcon(".\\Icon\\首页图标.jpg"))# 设置窗口图标
         self.setWindowTitle("专注时间")# 设置窗口标题
         self.setGeometry(400, 200, 600, 400)# 设置窗口大小
 

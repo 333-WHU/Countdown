@@ -2,7 +2,7 @@ from PySide6.QtWidgets import QDialog,QWidget,QLabel,QVBoxLayout,QHBoxLayout,QPu
 from PySide6.QtCore import Qt,QTimer
 from PySide6.QtGui import QFont
 
-from Show_Box import EndLabel
+from Widgets.Show_Box import EndLabel
 
 class Final_Dialog(QDialog):
     def __init__(self,passed_time):

@@ -2,28 +2,7 @@ from PySide6.QtWidgets import QLabel, QVBoxLayout, QWidget, QPushButton, QSpinBo
 from PySide6.QtCore import QTimer, QTime, Qt,QDate
 from PySide6.QtGui import QIcon, QFont,QPixmap
 
-class BaseButton(QPushButton):
-    """基础按钮"""
-    def __init__(self):
-        super().__init__()
-        self.init_size()
-        self.init_self()
-        self.init_background()
-
-    def init_size(self):
-        """初始化大小"""
-        self.setMinimumHeight(90)
-        self.setMaximumWidth(150)
-    
-    def init_self(self):
-        """初始化部件"""
-
-    def init_background(self):
-        """初始化样式"""
-        self.setStyleSheet("""
-                color: red;
-                border-radius: 10px;
-            """)
+from Interfaccia.BaseButton import BaseButton
 
 class UpButton(BaseButton):
     """增加时间按钮"""
@@ -37,8 +16,7 @@ class UpButton(BaseButton):
     
     def init_self(self):
         """初始化部件"""
-        self.printer = QPixmap("./sourse/UpArrow_del.png")
-
+        self.printer = QPixmap(".\\Icon\\UpArrow_del.png")
 
     def init_background(self):
         
@@ -59,7 +37,7 @@ class DownButton(UpButton):
 
     def init_self(self):
         """初始化部件"""
-        self.printer = QPixmap("./sourse/DownArrow_del.png")
+        self.printer = QPixmap(".\\Icon\\DownArrow_del.png")
 
 class ConfirmButton(BaseButton):
     """确定按钮"""

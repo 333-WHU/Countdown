@@ -3,8 +3,8 @@ from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Qt, QTimer
 import sys
 
-from Button_Box import FinishButton
-from Show_Box import BaseLabel
+from Widgets.Button_Box import FinishButton
+from Widgets.Show_Box import BaseLabel
 
 
 class Countdown(QDialog):
